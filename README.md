@@ -12,6 +12,7 @@ Project structure
 - `metrics.py`: performance metrics implementation
 - `data_transform.py`: script for string indexing and creating new csv file
 - `validation.py`: cross-validation script
+- `result_analysis.py`: evaluating metrics from predicted values
 - `utils.py`: some utils for the algorithm
 
 Cross-validation performance metrics results
