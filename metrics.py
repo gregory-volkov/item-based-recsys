@@ -1,5 +1,3 @@
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.metrics import make_scorer
 import numpy as np
 
 
@@ -39,9 +37,3 @@ def gini(r):
     n = r.shape[0]
     return (np.sum((2 * indices - n - 1) * r)) / (n * np.sum(r))
 
-
-true = np.array([1, 2, 3, 3, 2])
-predicted = np.array([1.2, 3.8312894812, 4.123451, 1.512358294, 1.4249832])
-predicted_ids = np.argsort(predicted)
-
-print(f"{rmse(true, predicted)},{mse(true, predicted)},{ndcg_score(true[predicted_ids], k=10)},{gini(predicted)}")

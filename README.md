@@ -1,6 +1,11 @@
 Item-based collaborative filtering recommender system
 =====================================================
 
+Requirements
+------------
+- pyspark
+- numpy
+
 Project structure
 ------------------
 - `predictor.py`: script with prediction function
