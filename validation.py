@@ -78,7 +78,6 @@ for i in range(parts_n):
     rating_mat, items_stat, sim_mat = get_dfs(train_df, sqlContext, schema_items_stat)
 
     for item in range(min_sid, max_sid + 1):
-        print("nya")
         predicted = predict(user, item, items_stat, rating_mat, sim_mat, sqlContext, schema_user_ratings, schema_song_sims)
 
         new_df = sc.parallelize([Row(Sid=item, Uid=user, Audit_n=predicted)]).toDF()
