@@ -9,7 +9,7 @@ Project structure
 - `validation.py`: cross-validation script
 - `utils.py`: some utils for the algorithm
 
-Performance metrics results
+Cross-validation performance metrics results
 ---------------------------
 
 | Sub <br> dataset |    MSE    |     RMSE     |     nDCG     |     Gini     |
